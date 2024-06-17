@@ -1,0 +1,46 @@
+@import url("./global.css");
+@import url("./style.css");
+
+
+.q1.active,.q2.active,.q3.active{
+    display: flex;
+}
+.container{
+    margin: 100px auto;
+    width: 90%;
+    display: flex;
+    gap:20px;
+    flex-direction: column;
+    
+    h1{
+         text-align: center;
+         color: crimson;
+         padding: 20px;
+    }
+
+    .q{
+        display:flex;
+        flex-direction: column;
+    }
+
+ 
+
+  button{
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    background-color: rgb(255, 194, 206);
+    border: none;
+    border-radius: 7px;
+  }
+
+    p{
+       display: none;
+       padding: 20px;
+       background-color: rgb(255, 236, 236);
+       border: none;
+    }
+
+
+
+}

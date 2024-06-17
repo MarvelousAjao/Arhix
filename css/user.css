@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  gap: 10px;
+}
+.container main {
+  width: 70%;
+}
+.container main h3 {
+  padding: 20px;
+}/*# sourceMappingURL=user.css.map */

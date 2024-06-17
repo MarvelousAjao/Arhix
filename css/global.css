@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  line-height: 2rem;
+  font-family: Poppins;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat;
+}
+
+body {
+  overflow-x: hidden;
+}/*# sourceMappingURL=global.css.map */

@@ -1,0 +1,58 @@
+@import "./global.scss";
+
+
+nav{
+    height: 100vh;
+    position: relative;
+    width: 20%;
+    background-color: rgb(247, 247, 247);
+   box-shadow: 2px 2px 2px solid silver;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+
+    text-align: start;
+
+    h1{
+        padding: 20px;
+    }
+
+    ul{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+     li{
+        padding: 10px;
+        
+        display: flex;
+        align-items: center;
+        width: 100%;
+        gap:15px;
+        transition: 2s linear ease;
+        &.active{
+            background-color: white;
+        }
+        &:hover{
+            background-color: rgb(255, 255, 255);
+        }
+        i{
+            color: crimson;
+        }
+        a{
+            color: black;
+            width: 100%;
+            button{
+             width: 95%;
+             background:linear-gradient(to right,crimson,rgb(50, 3, 94));
+             color: white;
+             border: none;
+             border: none;
+            
+            }
+        }
+    
+     }
+    }
+}
+

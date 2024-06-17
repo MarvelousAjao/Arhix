@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  line-height: 2rem;
+  font-family: Poppins;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: Montserrat;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+input::-moz-placeholder {
+  color: black;
+}
+
+input::placeholder {
+  color: black;
+}
+
+.container {
+  height: 120vh;
+  display: flex;
+  align-items: center;
+}
+.container .register {
+  width: 50%;
+  background: rgb(255, 255, 255);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  padding: 20px;
+}
+.container .register .register-info {
+  padding: 20px;
+}
+.container .register .register-info h1 {
+  color: crimson;
+}
+.container .register .register-info a {
+  color: crimson;
+  text-decoration: underline;
+}
+.container .register form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+.container .register form input {
+  width: 80%;
+  padding: 5px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 2px solid rgba(255, 71, 71, 0.281);
+  outline: 2px solid none;
+}
+.container .register form input:focus {
+  outline: 2px solid crimson;
+}
+.container .register form .dob {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 1rem;
+  text-align: left;
+}
+.container .register form .terms {
+  display: flex;
+  width: 100%;
+  text-align: left;
+  gap: 10px;
+  padding-left: 5px;
+}
+.container .register form .terms input {
+  width: 20px;
+  outline: none;
+}
+.container .register form .terms input:checked {
+  color: crimson;
+}
+.container .register form button {
+  width: 82%;
+  color: white;
+  background-color: crimson;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+}
+.container img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=register.css.map */
