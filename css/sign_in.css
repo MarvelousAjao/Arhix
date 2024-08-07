@@ -1,4 +1,24 @@
 @import "./register.css";
+.dark {
+  background-color: rgb(20, 20, 20);
+  color: white;
+}
+.dark .register {
+  background-color: rgb(20, 20, 20);
+}
+.dark input {
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+}
+.dark input::-moz-placeholder {
+  color: white;
+}
+.dark input::placeholder {
+  color: white;
+}
+
 .container {
   width: 100%;
   height: 100vh;

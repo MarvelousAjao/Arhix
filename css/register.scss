@@ -1,10 +1,35 @@
 @import "./global.scss";
 
 
+.dark{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    .register{
+        background-color: rgb(20, 20, 20);
+        form{
+            background-color: rgb(20, 20, 20);
+        }
+        .register-info{
+            background-color: rgb(20, 20, 20);
+        }
+    }
 
-input::placeholder{
-    color: black;
+    .container{
+        background-color: rgb(20, 20, 20);
+    }
+    input{
+        background-color: black;
+        border: none;
+        outline: none;
+        color: white;
+        &::placeholder{
+            color: white;
+            
+        }
+    }
 }
+
+
 
 
 .container{
@@ -14,7 +39,9 @@ input::placeholder{
     .register{
         width: 50%;
         background: rgb(255, 255, 255);
+        -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
+        
         padding: 20px;
         .register-info{
             padding: 20px;

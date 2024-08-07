@@ -1,9 +1,26 @@
 @import "./register.css";
 
+
+.dark{
+    background-color: rgb(20, 20, 20);
+    color: white;
+    .register{
+        background-color: rgb(20, 20, 20);
+    }
+    input{
+        background-color: black;
+        border: none;
+        outline: none;
+        color: white;
+        &::placeholder{
+            color: white;
+            
+        }
+    }
+}
+
 .container{
     width: 100%;
     height: 100vh;
-    img{
-       
-    }
+  
 }

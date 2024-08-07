@@ -1,5 +1,17 @@
-@import url("./global.css");
-@import url("./style.css");
+@import "./global.css";
+@import "./style.css";
+.dark .container h1 {
+  color: rgb(255, 9, 42);
+}
+.dark .container button {
+  background-color: rgba(220, 20, 60, 0.623);
+  color: white;
+}
+.dark .container p {
+  background-color: rgb(19, 18, 18);
+  color: white;
+}
+
 .q1.active, .q2.active, .q3.active {
   display: flex;
 }

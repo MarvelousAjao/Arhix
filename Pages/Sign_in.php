@@ -21,5 +21,6 @@
         </div>
         <img src="../images/img (5).png" alt="">
     </div>
+    <script src="../js/app.js"></script>
 </body>
 </html>

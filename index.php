@@ -14,7 +14,7 @@
 <body>
 
   <div class="nav">
-    <h1 class="logo headline"><span class="logo-design">Ahrix</span> Of Time</h1>
+    <h1 class="logo headline"><span class="logo-design">Ahrix</span></h1>
     <ul>
       <li class="ul active"><a href="#">Home</a></li>
       <li class="ul"><a href="#gallery">Gallery</a></li>
@@ -25,13 +25,14 @@
           <button>
             Sign_In
           </button></a>
-      </li>
+</li>
       <li>
         <a href="#"><i class="fa fa-cog"></i>
           <ul class="setting ">
             <li class="darkbtn"><a href="#">Dark Mode</a></li>
+            <li class="lightbtn"><a href="#">LightMode</a></li>
             <li><a href="./Pages/">Report</a></li>
-            <li><a href="./Pages/faq.html">FAQ'S</a></li>
+            <li><a href="./Pages/faq.php">FAQ'S</a></li>
           </ul>
         </a>
       </li>
@@ -76,160 +77,7 @@
   </main>
 
   <script src="./scroll.js"></script>
-<script>
-    const menu = document.querySelector(".setting");
-    const btn = document.querySelector(".fa-cog");
-
-
-
-    btn.addEventListener("click", () => {
-      menu.classList.toggle("active");
-    })
-
-
-
-
-    function darkmode() {
-      const darkmode = document.querySelector(".darkbtn");
-
-      darkmode.addEventListener("click", function() {
-        document.body.classList.toggle("dark");
-
-        if (document.body.classList == "dark") {
-          darkmode.innerText == "DarkMode";
-        } else if (document.body.classList != "dark") {
-          darkmode.innerText == "LightMode";
-        }
-
-      })
-    }
-
-
-    darkmode();
-
-
-
-
-
-    const gallery = [{
-        img: "img (1).png",
-        name: "Ferari 458 Italia"
-      },
-      {
-        img: "img (3).png",
-        name: "Lamborghuni  Gallardo"
-      },
-      {
-        img: "img (4).png",
-        name: "Lamborghuni  Sesto Elemento"
-      },
-      {
-        img: "img (5).png",
-        name: "Renault Clio"
-      },
-      {
-        img: "img (6).png",
-        name: "Ferari la Ferari"
-      },
-      {
-        img: "img (7).png",
-        name: "Jaguar "
-      },
-      {
-        img: "img (8).png",
-        name: "Peugeuot"
-      },
-      {
-        img: "img (9).png",
-        name: "Tesla"
-      }
-    ]
-
-
-    const item = gallery.map((item) => {
-      return (
-        `<div class="gallery-items">
-      <img src="./images/${item.img}" alt="${item.name}">
-      <h3>${item.name}</h3>
-      </div>`
-          )
-        }).join('');
-
-
-        document.querySelector(".galleries").innerHTML = item;
-
-
-        const flex = [{
-            img: "img (1).png",
-
-          },
-          {
-            img: "img (3).png",
-
-          },
-          {
-            img: "img (4).png",
-
-          },
-          {
-            img: "img (5).png",
-
-          },
-          {
-            img: "img (6).png",
-
-          }
-        ]
-
-        const flexies = flex.map((item) => {
-          return (
-            `<div class="flex-items">
-      <img src="./images/${item.img}" alt="${item.name}">
-      </div>`
-          )
-        }).join('');
-
-        document.querySelector(".flex-cap").innerHTML = flexies;
-
-        document.querySelectorAll(".flex-items")[2].classList.add("active");
-
-
-        const list = document.querySelectorAll(".flex-items");
-
-        for (let i = 0; i < list.length; i++) {
-          const element = list[i];
-
-          element.addEventListener("click", function() {
-            const elem = document.querySelector(".flex-items.active");
-            elem.classList.remove("active");
-
-            this.classList.add("active");
-
-
-          })
-        }
-
-        const li = ()=>{
-  
-
-
-          const list = document.querySelectorAll(".ul");
-
-          for (let i = 0; i < list.length; i++) {
-            const element = list[i];
-
-            element.addEventListener("click", function() {
-              const elem = document.querySelector(".ul.active");
-              elem.classList.remove("active");
-
-              this.classList.add("active");
-
-
-            })}
-        }
-        
-        li();
-</script>
+<script src="./js/app.js"></script>
 
 <div class="contact" id="contact">
   <img src="./images/img (3).png" alt="">
